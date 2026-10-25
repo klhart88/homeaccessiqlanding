@@ -1691,6 +1691,62 @@ main #example .check li::marker { color: #62666e; font-size: .9em; }
   main #example .check,
   main #example .check li { font-size: 16px !important; }
 }
+</style>
+<style id="mobile-menu-match-site">
+/* Match the mobile menu on the other SmartIQ pages: 2 x 2 contact grid + bolder link text */
+@media (max-width: 900px) {
+  header.top .mobile-menu a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 580 !important;
+    padding: 10px !important;
+    border-radius: 7px !important;
+  }
+  header.top .mobile-menu a:hover,
+  header.top .mobile-menu a:focus-visible {
+    background: #f6f5f2 !important;
+    color: #c40000 !important;
+  }
+  header.top .mobile-menu-heading {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+    font-size: 11px !important;
+    font-weight: 740 !important;
+    letter-spacing: .16em !important;
+    text-transform: uppercase !important;
+    color: #c40000 !important;
+    padding: 0 10px 5px !important;
+  }
+  header.top .mobile-menu .mobile-start-link {
+    background: #111827 !important;
+    color: #fff !important;
+    text-align: center !important;
+    font-weight: 620 !important;
+  }
+  header.top .mobile-menu .mobile-home-search-link {
+    background: #f7f7f8 !important;
+    border: 1px solid rgba(17,24,39,.07) !important;
+    text-align: center !important;
+  }
+  header.top .mobile-menu .mobile-contact-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+    width: 100% !important;
+  }
+  header.top .mobile-menu .mobile-contact-grid > a {
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 48px !important;
+    padding: 10px 8px !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    background: #f7f7f8 !important;
+    border: 1px solid rgba(17,24,39,.07) !important;
+  }
+}s
 </style></head><body><header class="top" id="top">
 <div class="wrap nav">
 <a aria-label="SmartIQ Realty home" class="logo smartiq-lockup" href="https://smartiqrealty.com/">
